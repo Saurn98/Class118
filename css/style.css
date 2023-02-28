@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+body{
+  background: yellow;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.heading {
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+} 
+
+#show_sketches{
+  position: relative;
+  float: right; 
+  font-size: 18px;
+  border: none;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: orange;
+  border-radius: 5px;
+  transition: .6s;
+}
+#show_sketches:hover{
+  background: yellow;
+}
+
+.about
+{
+  display: flex;
+  flex-direction: column;
+  background: #2ECC71;
+  width: 20%;
+  height: 20rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  left: 5%;
+  border: 2px solid black;
+  top: 50%;
+  transform: translate(0%, 10%);
+}
+
+.about button{
+  width: 8rem;
+  height: 3rem;
+  border: 5px solid black;
+  align-self: center;
+  justify-self: center;
+}
+
+canvas{
+  width: 70% !important;
+  position: relative;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+  height: 34rem !important;
+  top: -20%;
+  border-radius: 20px;
+  border: 1px solid white;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {box-shadow: 1px 1px 30px yellow;}
+  to {box-shadow: 1px 1px 30px blue;}
+}
